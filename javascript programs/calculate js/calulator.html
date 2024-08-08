@@ -1,0 +1,173 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- 
+<h1 onclick="add()">CALCULATOR</h1>
+<input type="text" id="a">
+<script>
+    function add(){
+        let a1=document.getElementById('a')
+        alert("hii")
+    } 
+</script>     -->
+    
+
+       <h1>calculator</h1>
+       
+       <input type="number" id="add1" class="one">
+       <input type="number" id="add2" class="two">
+
+      <button  type="button" class="three" onclick="add()">add</button>
+
+       <script>
+       
+        function add()
+        {
+            let a=parseInt(document.getElementById('add1').value)
+            let b=parseInt(document.getElementById('add2').value)
+            document.write( a + b);
+        }
+
+    </script>
+
+      <br> <br>
+
+<input type="number" id="sub1" class="one">
+<input type="number" id="sub2" class="two">  
+
+      <button type="button" class="three" onclick="sub()">sub</button>
+
+      <script>
+
+         function sub() 
+         {
+                  let a=parseInt(document.getElementById('sub1').value)
+                  let b=parseInt(document.getElementById('sub2').value)
+                  document.write( a - b)
+         }
+
+      </script>
+
+      <br> <br>
+
+      
+<input type="number" id="mul1" class="one">
+<input type="number" id="mul2" class="two">  
+
+      <button type="button" class="three" onclick="mul()">mul</button>
+
+      <script>
+
+         function mul() 
+         {
+                  let a=parseInt(document.getElementById('mul1').value)
+                  let b=parseInt(document.getElementById('mul2').value)
+                  document.write( a * b)
+         }
+
+      </script>
+
+      <br> <br>
+
+      <input type="number" id="dev1" class="one">
+      <input type="number" id="dev2" class="two">  
+
+      <button type="button" class="three" onclick="dev()">dev</button>
+
+      <script>
+
+         function dev() 
+         {
+                  let a=parseInt(document.getElementById('dev1').value)
+                  let b=parseInt(document.getElementById('dev2').value)
+                  document.write( a % b)
+         }
+
+      </script>
+
+      <br> <br>
+    
+
+      <!DOCTYPE html>
+      <html>
+      <body>
+      
+      <h2>JavaScript if</h2>
+      
+      <p>Display "Good day!" if the hour is less than 18:00:</p>
+      
+      <p id="demo">Good Evening!</p>
+      
+      <script>
+      if (new Date().getHours() < 18) {
+        document.getElementById("demo").innerHTML = "Good day!";
+      }
+      </script>
+      <br> <br>
+      </body>
+      </html> 
+
+      <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+
+<script>
+let language;
+switch (3) {
+  case 0:
+    language = "C";
+    break;
+  case 1:
+    language = "C++";
+    break;
+  case 2:
+    language = "HTML";
+    break;
+  case 3:
+    language = "CSS";
+    break;
+  case 4:
+    language = "JAVA";
+    break;
+  case 5:
+    language = "JAVASCRIPT";
+    break;
+  case  6:
+    language = "PYTHON";
+    break;
+  default:
+        language= "no person";
+}
+document.getElementById("demo").innerHTML =  " employee language is " + language;
+</script>
+
+</body>
+</html>
+
+
+<h1>FOR LOOP CONCEPT</h1>
+
+<P id="demo"></P>
+
+ <script>
+
+     const number=10;
+      for (let i = 1; i < number;i++ )
+       {
+         console.log(i+"<br>")
+       } 
+       
+     </script>
+
+</body>
+</html>

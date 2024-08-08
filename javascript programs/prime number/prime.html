@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime or not prime</title>
+</head>
+<body>
+    <h1>The  number is prime or not prime number</h1>
+    <p id="demo"></p>
+
+    
+
+<script>
+
+    const number = 20; 
+    let value = "prime number"; 
+
+    
+    if (number < 2) 
+    {
+        value = "not prime number"; 
+    }
+     else 
+     {
+        for (let i = 2; i * i <= number; i++) 
+        {
+            if (number % i === 0)
+            {
+                value = "not prime number"; 
+            }
+        }
+    }
+
+    document.getElementById("demo").innerHTML = value;
+
+</script>
+
+</body>
+</html>

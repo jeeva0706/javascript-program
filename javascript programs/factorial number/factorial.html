@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+</head>
+<body>
+    
+    <h1>FACTORIAL NUMBER</h1>
+
+    <p id="demo"></p>
+
+    <script>
+       
+let number = parseInt(prompt("Enter a number:"));
+
+
+let result = 1;
+let n = number;
+
+
+while (n > 0) {
+  result *= n;
+  n--;
+}
+
+
+document.write(`The factorial number ${number} is ${result}`);
+
+    </script>
+
+</body>
+</html>
+
+
+
